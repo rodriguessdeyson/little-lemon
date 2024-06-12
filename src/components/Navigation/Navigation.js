@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./NavStyle.module.css"
 
 export default function Navigation(props) {
 	return (
@@ -20,7 +21,7 @@ export default function Navigation(props) {
 		</Link>
 		<a
 			className="hover-effect"
-			href={require("../assets/menu.webp")}
+			href={require("../../assets/menu.webp")}
 			target="_blank"
 			rel="noreferrer">
 			<h1>Menu</h1>
