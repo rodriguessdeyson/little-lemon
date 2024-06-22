@@ -6,9 +6,9 @@ import logoWhiteImage from "./assets/logo-white.png";
 import "./footerStyle.css";
 
 const contacts = [
-  { icon: faLocationDot, info: "123 Fake Ave, Chicago, IL 60602" },
-  { icon: faPhone, info: "+1 (012) 345-6789" },
-  { icon: faEnvelope, info: "info@littlelemon.com" },
+  { icon: faLocationDot, detail: "5570 Watsica Land, Brainville, Brazil" },
+  { icon: faPhone, detail: "+55 (21) 4489-9898" },
+  { icon: faEnvelope, detail: "adm@littlelemon.com.br" },
 ];
 
 const socials = [
@@ -31,7 +31,7 @@ const Footer = ({ navLinks }) => {
 				<p>Since 1957</p>
 			</div>
 			<nav className="site-footer-nav">
-				<h4>Sitemap</h4>
+				<h4>Map</h4>
 				<ul>
 					{
 						navLinks.map(
@@ -50,7 +50,7 @@ const Footer = ({ navLinks }) => {
 				<address>
 				{contacts.map((contact, index) => (
 					<p key={index}>
-						<FontAwesomeIcon icon={contact.icon} /> {contact.info}
+						<FontAwesomeIcon icon={contact.icon} /> {contact.detail}
 					</p>
 				))}
 			</address>

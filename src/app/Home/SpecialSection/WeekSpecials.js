@@ -3,7 +3,6 @@ import MealCard from "../components/Menu/MealCard";
 import { getWeekSpecial } from "../../../api/MenuAPI";
 
 import "./weekSpecialsStyle.css";
-
 const WeekSpecials = () => {
 	return (
 		<section className="container grid week-specials" id="menu">
