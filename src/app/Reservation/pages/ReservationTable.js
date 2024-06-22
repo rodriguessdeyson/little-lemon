@@ -30,7 +30,7 @@ const BookingTable = () => {
 	useEffect(() => {
 		console.log("montou");
 		window.scrollTo(0, 0)
-	}, true)
+	}, [])
 	return (
 		<div className="reservations">
 			<h2>Table reservation</h2>
