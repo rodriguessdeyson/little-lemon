@@ -135,8 +135,8 @@ const saladMenu = [{
 	},
 	{
 		id: 5,
-		name: "Roasted Salad",
-		image: roastedRootSaladImage,
+		name: "Salteé Salad",
+		image: salteeSalad,
 		price: "$10.00",
 		content: "each",
 		description: `The famous greek salad of crispy lettuce, peppers, olives and
@@ -147,16 +147,6 @@ const saladMenu = [{
 		id: 6,
 		name: "Pasta Salad",
 		image: pastaSaladImage,
-		price: "$10.00",
-		content: "each",
-		description: `The famous greek salad of crispy lettuce, peppers, olives and
-			our Chicago style feta cheese, garnished with crunchy garlic and rosemary
-			croutons.`,
-	},
-	{
-		id: 7,
-		name: "Salteé Salad",
-		image: salteeSalad,
 		price: "$10.00",
 		content: "each",
 		description: `The famous greek salad of crispy lettuce, peppers, olives and

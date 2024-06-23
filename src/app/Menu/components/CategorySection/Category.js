@@ -19,32 +19,32 @@ const Category = ({category, slogan, dishes,}) => {
 
 	return (
 		<article>
-				<div className="container-salad">
-					<div className="head-section">
-						<h2>{category}</h2>
-						{mobileView ? "" : <p>{slogan}</p>}
-					</div>
-					<Carousel
-						swipeable={false}
-						draggable={false}
-						showDots={true}
-						infinite={true}
-						autoPlay={mobileView ? true : false}
-						autoPlaySpeed={3000}
-						keyBoardControl={true}
-						customTransition="all .15"
-						transitionDuration={100}
-						containerClass="carousel-container"
-						removeArrowOnDeviceType={["tablet", "mobile"]}
-						dotListClass="custom-dot-list-style"
-						itemClass="carousel-item-padding-40-px menu-dish"
-						responsive={getResponsive()}
-					>
-						{dishes.map((dish) => (
-							<MealCard key={dish.id} meal={dish} />
-						))}
-					</Carousel>
+			<div className="container-salad">
+				<div className="head-section">
+					<h2>{category}</h2>
+					{mobileView ? "" : <p>{slogan}</p>}
 				</div>
+				<Carousel
+					swipeable={false}
+					draggable={false}
+					showDots={true}
+					infinite={true}
+					autoPlay={mobileView ? true : false}
+					autoPlaySpeed={3000}
+					keyBoardControl={true}
+					customTransition="all .15"
+					transitionDuration={100}
+					containerClass="carousel-container"
+					removeArrowOnDeviceType={["tablet", "mobile"]}
+					dotListClass="custom-dot-list-style"
+					itemClass="carousel-item-padding-40-px menu-dish"
+					responsive={getResponsive()}
+				>
+					{dishes.map((dish) => (
+						<MealCard key={dish.id} meal={dish} />
+					))}
+				</Carousel>
+			</div>
 		</article>
 	);
 };

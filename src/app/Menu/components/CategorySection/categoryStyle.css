@@ -1,13 +1,11 @@
 :root {
 	--container-md: 1290px;
-	--primary-text-color: #1e4a34;
 	--title-font: 'Righteous', cursive;
 	--text-8xl: 44px;
 	--text-6xl: 28px;
 
-	--primary-color: #F1BC56;
-	--primary-hover: #daa749;
-	--secondary-color: #696969;
+	--primary-text-color: #1e4a34;
+	--secondary-text-color: #696969;
 	--tertiary-color: #D9D9D9;
 
 	--transition-short: all 250ms ease;
@@ -15,33 +13,24 @@
 	--ransition-long: all 450ms ease;
 }
 
-
-.salad {
-	margin-top: 8rem;
-}
-
-@media (max-width: var(--container-md) ) {
-	.salad {
-		margin-left: 20px;
-	}
-}
-
 .menu-dish {
-	margin-right: 1%;
-	margin-left: 1%;
+	padding-right: 1vw;
+	padding-left: 2vw;
+}
+
+@media (max-width: var(--container-md)) {
+	.menu-dish {
+		padding-right: 0vw;
+		padding-left: 2vw;
+	}
 }
 .container-salad {
 	display: flex;
 	flex-direction: column;
 	margin-top: 8rem;
-	margin-left: 80px;
-	margin-right: 80px;
-}
-
-@media (max-width: var(--container-md)) {
-	.container-salad {
-		margin-left: 20px;
-	}
+	margin-bottom: 5rem;
+	margin-left: 8rem;
+	margin-right: 8rem;
 }
 
 .head-section {
@@ -49,7 +38,7 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 1rem;
-	padding-right: 80px;
+	padding-right: 8px;
 }
 
 @media (max-width: var(--container-md)) {
@@ -61,10 +50,13 @@
 
 .head-section h2 {
 	color: var(--primary-text-color);
-	font-family: var(--title-font);
-	font-size: var(--text-8xl);
-	font-weight: 600;
+	font-family: "Markazi Text";
+	font-weight: normal;
 	margin-bottom: 1rem;
+}
+
+.head-section h2:hover {
+	color: var(--secondary-text-color);
 }
 
 @media (max-width: var(--container-md)) {
@@ -72,53 +64,4 @@
 		font-size: var(--text-6xl);
 		margin-bottom: 0;
 	}
-}
-
-.navigation-salad {
-	align-items: center;
-	display: flex;
-	gap: 20px;
-}
-
-.navigation-salad button {
-	background-color: var(--primary-color);
-	border: 2px solid white;
-	border-radius: 9999px;
-	cursor: pointer;
-	line-height: 0;
-	transition: var(--transition-default);
-}
-
-.navigation-salad button:hover {
-	background-color: var(--primary-hover);
-	border: 2px solid var(--primary-text-color);
-}
-
-@media (max-width: var(--container-md)) {
-	.navigation-salad button {
-		padding: 14px 14px
-	}
-}
-
-.navigation-salad img {
-	user-select: none;
-}
-
-@media (max-width: var(--container-md)) {
-	.navigation-salad img {
-		height: 12px;
-		width: 12px;
-	}
-}
-
-.navigation-salad .prev img {
-	rotate: 180deg;
-}
-
-.navigation-salad .prev img:hover {
-	scale: 0.9;
-}
-
-.navigation-salad .next:hover {
-	scale: 0.9;
 }
