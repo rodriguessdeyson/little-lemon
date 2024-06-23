@@ -4,14 +4,14 @@ import Testimonials from "./TestimonialSection/Testimonials";
 import About from "./AboutSection/About";
 
 const Home = () => {
-  return (
-    <>
-      <Hero />
-      <WeekSpecials />
-      <Testimonials />
-      <About />
-    </>
-  );
+	return (
+		<>
+			<Hero />
+			<WeekSpecials />
+			<Testimonials />
+			<About />
+		</>
+	);
 };
 
 export default Home;

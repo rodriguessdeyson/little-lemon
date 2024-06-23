@@ -41,7 +41,6 @@
   left: 0;
 }
 
-
 @media (max-width: 915px) {
   .our-story {
     grid-template-columns: 1fr;

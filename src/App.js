@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navigation/Nav'
 import Footer from './components/Footer/Footer'
 import Home from "./app/Home/Home";
+import Menu from './app/Menu/Menu'
 import About from './app/About/About';
 import ReservationTable from "./app/Reservation/pages/ReservationTable";
 import ConfirmedReservation from "./app/Reservation/pages/ReservationConfirmed/ReservationConfirmed";
@@ -51,6 +52,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/home" element={<Home />} />
+					<Route path="/menu" element={<Menu />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/reservations" element={<ReservationTable />} />
 					<Route path="/confirmedReservation" element={<ConfirmedReservation />} />
