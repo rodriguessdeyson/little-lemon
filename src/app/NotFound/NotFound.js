@@ -1,12 +1,16 @@
+import closedRestaurant from "../../assets/restaurant/closedLittleLemon.jpg"
 import "./NotFound.css";
 
 const NotFound = () => {
-  return (
-    <div className="container page-not-found">
-      <h1>404</h1>
-      <h2>Page not found</h2>
-    </div>
-  );
+	return (
+		<div className="not-found">
+			<img
+				src={closedRestaurant}
+				alt="Closed little lemon">
+			</img>
+			<h2>Under construction</h2>
+		</div>
+	);
 };
 
 export default NotFound;

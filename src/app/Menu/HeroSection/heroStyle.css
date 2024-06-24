@@ -1,6 +1,6 @@
 .hero {
   padding-top: 2rem;
-  background-image: url("/src/app/Menu/assets/littlelemon.jpeg");
+  background-image: url("/src/assets/restaurant/littlelemon.jpeg");
   background-size: cover;
   background-position: 0cap;
   background-blend-mode: soft-light;

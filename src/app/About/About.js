@@ -1,9 +1,9 @@
-import chefDomenicoImage from "./assets/domenico-chef.avif"
-import chefSebastianImage from "./assets/sebastian-chef.avif"
-import chefOwner from "./assets/little-owner.avif"
-import chefOwner2 from "./assets/little-owner_2.avif"
-import inside from "../../assets/insides.avif"
-import outside from "./assets/outsides.avif"
+import chefDomenicoImage from "../../assets/chefs/domenico-chef.avif"
+import chefSebastianImage from "../../assets/chefs/sebastian-chef.avif"
+import chefOwner from "../../assets/owner/little-owner.avif"
+import chefOwner2 from "../../assets/owner/little-owner_2.avif"
+import inside from "../../assets/restaurant/insides.avif"
+import outside from "../../assets/restaurant/outsides.avif"
 import "./aboutStyle.css";
 
 const About = () => {

@@ -44,7 +44,7 @@
 }
 
 .select-wrapper::after {
-	content: url("/src/app/Reservation/assets/arrow.svg");
+	content: url("/src/assets/icons/arrow.svg");
 	font-weight: 600;
 	height: 1.5rem;
 	width: 1.5rem;

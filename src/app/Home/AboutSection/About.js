@@ -1,7 +1,7 @@
 import "./aboutStyle.css";
 import { HashLink } from "react-router-hash-link";
-import chefsMarioAndAdrian1Img from "../assets/chefs-mario-and-adrian_1.jpg";
-import chefsMarioAndAdrian2Img from "../assets/chefs-mario-and-adrian_2.jpg";
+import chefsMarioAndAdrian1Img from "../../../assets/chefs/chefs-mario-and-adrian_1.jpg";
+import chefsMarioAndAdrian2Img from "../../../assets/chefs/chefs-mario-and-adrian_2.jpg";
 
 const About = () => {
 	return (

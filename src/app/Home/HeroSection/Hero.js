@@ -1,5 +1,5 @@
 import { HashLink } from "react-router-hash-link";
-import restaurantFoodImage from "../assets/restaurant-food.jpg";
+import restaurantFoodImage from "../../../assets/restaurant/restaurant-food.jpg";
 import "./heroStyle.css";
 
 const Hero = () => {

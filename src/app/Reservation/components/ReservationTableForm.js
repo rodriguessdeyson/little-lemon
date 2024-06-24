@@ -39,7 +39,7 @@ const ReservationTableForm = ({
 		isTimeValid() &&
 		isNumberOfGuestsValid() &&
 		isOccasionValid();
- 
+
 	const handleDateChange = (e) => {
 		setDate(e.target.value);
 		dispatchOnDateChange(e.target.value);

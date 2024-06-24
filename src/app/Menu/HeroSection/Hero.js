@@ -1,4 +1,4 @@
-import restaurantFoodImage from "../assets/little-lemon-kitchen.avif";
+import restaurantFoodImage from "../../../assets/restaurant/little-lemon-kitchen.avif"
 import "./heroStyle.css";
 
 const Hero = () => {

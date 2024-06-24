@@ -1,9 +1,10 @@
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import headChefImage from "../../assets/head_chef.jpg"
-import cheeseImage from "../../assets/cheese.png"
-import saladImage from "../../assets/salad.png"
+import headChefImage from "../../../../assets/chefs/mario_chef.jpg"
+import cheeseImage from "../../../../assets/icons/cheese.png"
+import saladImage from "../../../../assets/icons/salad.png"
 import "./reservationConfirmedStyle.css"
+
 const ConfirmedReservation = () => {
 	return (
 		<div className="reservation">

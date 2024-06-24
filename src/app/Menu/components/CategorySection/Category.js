@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getResponsive } from "../constants"
+import { getResponsive } from "./constants"
 
 import MealCard from "../../../../components/Menu/MealCard";
 import Carousel from "react-multi-carousel";
