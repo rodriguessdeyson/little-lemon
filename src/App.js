@@ -33,7 +33,7 @@ function App() {
 		},
 		{
 			name: "Order Online",
-			path: "/orderOnline",
+			path: "/menu",
 			hashLink: false,
 		},
 		{

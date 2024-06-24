@@ -40,7 +40,7 @@ import zabaglioneImage from "../assets/menu/desserts/zabaglione.webp";
 import sfogliatellaImage from "../assets/menu/desserts/sfogliatella.jpg";
 import gelatoImage from "../assets/menu/desserts/gelato.avif";
 
-const meals = [
+const popularMenu = [
 	{
 		name: "Greek Salad",
 		image: greekSaladImage,
@@ -92,25 +92,24 @@ const meals = [
 	},
 ];
 
-const saladMenu = [{
+const saladMenu = [
+	{
 		id: 1,
 		name: "Caprese Salad",
 		image: capreseSaladImage,
-		price: "$10.00",
+		price: "$12.00",
 		content: "each",
-		description: `The famous greek salad of crispy lettuce, peppers, olives and
-			our Chicago style feta cheese, garnished with crunchy garlic and rosemary
-			croutons.`,
+		description: `A classic Italian salad featuring ripe tomatoes, fresh mozzarella, 
+		and fragrant basil, drizzled with balsamic glaze and extra virgin olive oil.`,
 	},
 	{
 		id: 2,
-		name: "Caeser Salad",
+		name: "Caesar Salad",
 		image: caeserSaladImage,
-		price: "$10.00",
+		price: "$11.00",
 		content: "each",
-		description: `The famous greek salad of crispy lettuce, peppers, olives and
-			our Chicago style feta cheese, garnished with crunchy garlic and rosemary
-			croutons.`,
+		description: `Crisp romaine lettuce tossed with creamy Caesar dressing, 
+		topped with grated Parmesan cheese, crunchy croutons, and a hint of anchovy.`,
 	},
 	{
 		id: 3,
@@ -118,41 +117,37 @@ const saladMenu = [{
 		image: greekSalad2Image,
 		price: "$10.00",
 		content: "each",
-		description: `The famous greek salad of crispy lettuce, peppers, olives and
-			our Chicago style feta cheese, garnished with crunchy garlic and rosemary
-			croutons.`,
+		description: `The famous Greek salad of crispy lettuce, peppers, olives, 
+		and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.`,
 	},
 	{
 		id: 4,
 		name: "Brazilian Salad",
 		image: brazilianSaladImage,
-		price: "$10.00",
+		price: "$12.00",
 		content: "each",
-		description: `The famous greek salad of crispy lettuce, peppers, olives and
-			our Chicago style feta cheese, garnished with crunchy garlic and rosemary
-			croutons.`,
+		description: `A vibrant mix of crisp greens, hearts of palm, tomatoes, 
+		corn, and olives, tossed in a zesty lime and cilantro dressing.`,
 	},
 	{
 		id: 5,
 		name: "Salteé Salad",
 		image: salteeSalad,
-		price: "$10.00",
+		price: "$13.00",
 		content: "each",
-		description: `The famous greek salad of crispy lettuce, peppers, olives and
-			our Chicago style feta cheese, garnished with crunchy garlic and rosemary
-			croutons.`,
+		description: `A delightful blend of mixed greens, cherry tomatoes, 
+		avocado, and grilled chicken, topped with a light lemon vinaigrette.`,
 	},
 	{
 		id: 6,
 		name: "Pasta Salad",
 		image: pastaSaladImage,
-		price: "$10.00",
+		price: "$11.00",
 		content: "each",
-		description: `The famous greek salad of crispy lettuce, peppers, olives and
-			our Chicago style feta cheese, garnished with crunchy garlic and rosemary
-			croutons.`,
+		description: `A hearty salad with al dente pasta, cherry tomatoes, 
+		black olives, feta cheese, and fresh herbs, tossed in a tangy Italian dressing.`,
 	},
-];
+	];
 
 const chickenMenu = [
 	{
@@ -385,7 +380,7 @@ const dessertMenu = [
 
 export function getWeekSpecial()
 {
-	const shuffled = [...meals].sort(() => 0.5 - Math.random());
+	const shuffled = [...popularMenu].sort(() => 0.5 - Math.random());
 	return shuffled.slice(0, 3);
 };
 
