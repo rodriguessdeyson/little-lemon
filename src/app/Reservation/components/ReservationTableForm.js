@@ -9,7 +9,7 @@ const ReservationTableForm = ({
 	const minimumDate = new Date().toISOString().split("T")[0];
 	const defaultTime = availableTimes[0];
 	const minimumNumberOfGuests = 1;
-	const maximumNumberOfGuests = 10;
+	const maximumNumberOfGuests = 8;
 	const occasions = ["Birthday", "Anniversary"];
 	const invalidClientName = "Please enter a valid name";
 	const invalidClientEmail = "Please enter a valid client email";
@@ -18,7 +18,7 @@ const ReservationTableForm = ({
 	const invalidOccasionErrorMessage = "Please choose a valid occasion";
 	const invalidNumberOfGuestsErrorMessage ="Please enter a number between 1 and 8";
 
-	const [client, setClient] = useState(null);
+	const [client, setClient] = useState();
 	const [email, setEmail] = useState();
 	const [date, setDate] = useState(minimumDate);
 	const [time, setTime] = useState(defaultTime);
@@ -62,8 +62,9 @@ const ReservationTableForm = ({
 			>
 				<input
 					type="text"
-					id="reservation-client"
-					name="reservation-client"
+					id="reservation-name"
+					name="reservation-name"
+					value={client}
 					required={true}
 					onChange={(e) => setClient(e.target.value)}
 				/>

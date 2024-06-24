@@ -3,7 +3,7 @@ const FormField = ({ children, label, htmlFor, hasError, errorMessage }) => {
 		<div className="form-field">
 			<label htmlFor={htmlFor}>{label}</label>
 			{children}
-			<p data-testid="error-message">{ hasError && errorMessage ? errorMessage : ""}</p>
+			<span data-testid={`error-message${htmlFor}`}>{ hasError && errorMessage ? errorMessage : ""}</span>
 		</div>
 	);
 };
