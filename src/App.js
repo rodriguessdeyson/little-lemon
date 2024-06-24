@@ -7,6 +7,7 @@ import About from './app/About/About';
 import ReservationTable from "./app/Reservation/pages/ReservationTable";
 import ConfirmedReservation from "./app/Reservation/pages/ReservationConfirmed/ReservationConfirmed";
 import NotFound from "./app/NotFound/NotFound";
+import React from 'react';
 
 function App() {
 
@@ -42,6 +43,9 @@ function App() {
 			hashLink: false,
 		},
 	];
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	  }, []);
 
 	return (
 		<>

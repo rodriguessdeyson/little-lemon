@@ -1,3 +1,4 @@
+import React from "react"
 import chefDomenicoImage from "../../assets/chefs/domenico-chef.avif"
 import chefSebastianImage from "../../assets/chefs/sebastian-chef.avif"
 import chefOwner from "../../assets/owner/little-owner.avif"
@@ -7,6 +8,9 @@ import outside from "../../assets/restaurant/outsides.avif"
 import "./aboutStyle.css";
 
 const About = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	  }, []);
 	return (
 		<>
 			<section className="container grid our-story" id="about">
