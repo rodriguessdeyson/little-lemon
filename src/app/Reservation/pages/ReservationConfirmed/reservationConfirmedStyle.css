@@ -1,0 +1,37 @@
+.reservation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1.75rem 0;
+	min-height: calc(100vh - 6.25rem - 18rem);
+}
+
+.container-reservation {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+.image {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 66%;
+}
+img {
+	width: 50%;
+	border-radius: 10%
+}
+.cheese {
+	bottom: 0;
+	left: 10vw;
+	position: absolute;
+	width: 122px;
+}
+.salad {
+	position: absolute;
+	right: 10vw;
+	top: 0;
+	width: 122px;
+}
