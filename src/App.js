@@ -14,17 +14,17 @@ function App() {
 	const navLinks = [
 		{
 			name: "Home",
-			path: "/#home",
+			path: "/home/#home",
 			hashLink: true,
 		},
 		{
 			name: "Menu",
-			path: "/#menu",
+			path: "/home/#menu",
 			hashLink: true,
 		},
 		{
 			name: "About",
-			path: "/#about",
+			path: "/home/#about",
 			hashLink: true,
 		},
 		{
@@ -54,7 +54,7 @@ function App() {
 			</header>
 			<main id="home">
 				<Routes>
-					<Route path="/" element={<Home />} />
+					<Route path="/" exact element={<Home />} />
 					<Route path="/home" element={<Home />} />
 					<Route path="/menu" element={<Menu />} />
 					<Route path="/about" element={<About />} />
