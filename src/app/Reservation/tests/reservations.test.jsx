@@ -38,7 +38,7 @@ describe("Reservations page", () => {
 		const dateInput = screen.getByLabelText(/Date/);
 		fireEvent.change(dateInput, { target: { value: reservationDate } });
 		fireEvent.blur(dateInput);
-		const updatedTimeOptions = await screen.findAllByTestId("reservation-time-option");
+		const updatedTimeOptions =  await screen.findAllByTestId("reservation-time-option");
 
 		expect(dateInput).toHaveValue(reservationDate);
 		initialTimeOptions.forEach((timeOption) =>
@@ -47,6 +47,6 @@ describe("Reservations page", () => {
 		updatedTimeOptions.forEach((timeOption) =>
 			expect(timeOption.value).toMatch(timeFormat)
 		);
-		expect(initialTimeOptions.length).not.toBe(updatedTimeOptions.length);
+		expect(initialTimeOptions.length).not.toEqual(updatedTimeOptions.length);
 	});
 });
