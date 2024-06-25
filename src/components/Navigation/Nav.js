@@ -14,7 +14,7 @@ return (
 		<nav
 			className="container grid nav-bar fill"
 		>
-			<HashLink className="nav-bar-logo" to="/">
+			<HashLink className="nav-bar-logo" to="/home">
 				<img src={littleLemonLogo} alt="Little Lemon logo" />
 			</HashLink>
 			<button

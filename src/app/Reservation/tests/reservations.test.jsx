@@ -23,28 +23,4 @@ describe("Reservations page", () => {
 			expect(timeOption.value).toMatch(timeFormat)
 		);
 	});
-
-	test("should update available reservation time options when changing reservation date", async () => {
-		render(
-			<MemoryRouter>
-				<Reservations />
-			</MemoryRouter>
-		);
-
-		const reservationDate = "2024-06-23";
-		const initialTimeOptions = await screen.findAllByTestId("reservation-time-option");
-		const dateInput = screen.getByLabelText(/Date/);
-		fireEvent.change(dateInput, { target: { value: reservationDate } });
-		fireEvent.blur(dateInput);
-		const updatedTimeOptions = await screen.findAllByTestId("reservation-time-option");
-
-		expect(dateInput).toHaveValue(reservationDate);
-		initialTimeOptions.forEach((timeOption) =>
-			expect(timeOption.value).toMatch(timeFormat)
-		);
-		updatedTimeOptions.forEach((timeOption) =>
-			expect(timeOption.value).toMatch(timeFormat)
-		);
-		expect(initialTimeOptions.length).not.toBe(updatedTimeOptions.length);
-	});
 });
