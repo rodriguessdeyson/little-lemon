@@ -6,7 +6,6 @@ import Menu from './app/Menu/Menu'
 import About from './app/About/About';
 import ReservationTable from "./app/Reservation/pages/ReservationTable";
 import ConfirmedReservation from "./app/Reservation/pages/ReservationConfirmed/ReservationConfirmed";
-import NotFound from "./app/NotFound/NotFound";
 import React from 'react';
 
 function App() {
@@ -60,7 +59,6 @@ function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/reservations" element={<ReservationTable />} />
 					<Route path="/confirmedReservation" element={<ConfirmedReservation />} />
-					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</main>
 			<Footer navLinks={navLinks} />
