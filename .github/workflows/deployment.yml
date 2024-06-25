@@ -29,6 +29,6 @@ jobs:
     - name: Run CI command
       run: npm ci
     - name: Run the tests
-      run: react-scripts test --detectOpenHandles --forceExit"
+      run: react-scripts test --detectOpenHandles --forceExit
     - name: Build
       run: npm run build
